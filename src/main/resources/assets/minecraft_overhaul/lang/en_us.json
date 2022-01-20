@@ -1,0 +1,14 @@
+{
+  "item.minecraft_overhaul.leaf": "Leaf",
+  "item.minecraft_overhaul.raw_silver": "Raw Silver",
+  "item.minecraft_overhaul.silver_ingot": "Silver Ingot",
+  "item.minecraft_overhaul.silver_nugget": "Silver Nugget",
+  "item.minecraft_overhaul.pelt": "Pelt",
+  "item.minecraft_overhaul.thread": "Thread",
+  "item.minecraft_overhaul.bound_leather": "Bound Leather",
+  "item.minecraft_overhaul.treated_leather": "Treated Leather",
+
+  "block.minecraft_overhaul.compressed_block_of_coal": "Compressed Block of Coal",
+  "block.minecraft_overhaul.block_of_raw_silver": "Block of Raw Silver",
+  "block.minecraft_overhaul.block_of_silver": "Block of Silver"
+}
