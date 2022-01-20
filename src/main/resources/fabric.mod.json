@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft_overhaul",
+  "version": "${version}",
+
+  "name": "Minecraft Overhaul",
+  "description": "This is a mod for all veteran players. It is not only a test to your skills, but a nostalgic relapse to what defined many of our childhoods. Good luck! \n \n Content: \n - 100+ Items/Materials \n - 50+ Blocks \n - 50+ Mobs \n - 6 Bosses",
+  "authors": [
+    "PrelawAverage5"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.prelaw.mc.MinecraftOverhaul"
+    ]
+  },
+  "mixins": [
+    "minecraft_overhaul.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
