@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_overhaul:compressed_coal_block",
+    "minecraft_overhaul:raw_silver_block",
+    "minecraft_overhaul:silver_block",
+    "minecraft_overhaul:silver_ore",
+    "minecraft_overhaul:deepslate_silver_ore",
+    "minecraft_overhaul:copper_button",
+    "minecraft_overhaul:copper_pressure_plate"
+  ]
+}

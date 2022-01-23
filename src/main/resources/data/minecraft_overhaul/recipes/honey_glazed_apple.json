@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H",
+    "A"
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:honey_bottle"
+    }
+  },
+  "key": {
+    "A": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhaul:ore_detector"
+  }
+}

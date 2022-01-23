@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "minecraft_overhaul:block/copper_pressure_plate" },
+    "powered=true": { "model": "minecraft_overhaul:block/copper_pressure_plate_down" }
+  }
+}

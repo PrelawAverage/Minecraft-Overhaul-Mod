@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_overhaul:raw_silver_block",
+    "minecraft_overhaul:silver_block",
+    "minecraft_overhaul:silver_ore",
+    "minecraft_overhaul:deepslate_silver_ore"
+  ]
+}

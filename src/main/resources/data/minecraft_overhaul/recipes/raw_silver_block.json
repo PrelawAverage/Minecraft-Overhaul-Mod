@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft_overhaul:raw_silver"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhaul:raw_silver_block"
+  }
+}

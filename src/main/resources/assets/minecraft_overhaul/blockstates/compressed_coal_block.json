@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "minecraft_overhaul:block/compressed_coal_block" }
+  }
+}

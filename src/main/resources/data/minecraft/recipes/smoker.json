@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LFL",
+    "CCC"
+  ],
+  "key": {
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "C": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "result": {
+    "item": "minecraft:smoker"
+  }
+}

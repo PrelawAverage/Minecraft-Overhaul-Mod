@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "silver_block",
+  "ingredient": {
+    "item": "minecraft_overhaul:raw_silver_block"
+  },
+  "result": "minecraft_overhaul:silver_block",
+  "experience": 6.3,
+  "cookingtime": 900
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "compressed_coal_block",
+  "ingredient": {
+    "item": "minecraft_overhaul:compressed_coal_block"
+  },
+  "result": "minecraft:diamond",
+  "experience": 6.3,
+  "cookingtime": 3600
+}

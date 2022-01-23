@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_overhaul:bookshelf_stairs",
+    "minecraft_overhaul:bookshelf_slab",
+    "minecraft_overhaul:glass_oak_door",
+    "minecraft_overhaul:glass_spruce_door",
+    "minecraft_overhaul:glass_dark_oak_door"
+  ]
+}

@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.prelaw.mc.MinecraftOverhaul"
+    ],
+    "client": [
+      "net.prelaw.mc.MinecraftOverhaulClient"
     ]
   },
   "mixins": [
