@@ -38,9 +38,9 @@ public class OldBundleItems extends Item {
         if (!user.isCreative()) {
             // Removes the item from the player (DONE)
             itemStack.decrement(1);
+        }
         // Plays a sound of the bag opening (DONE)
         world.playSoundFromEntity(user, user, SoundEvents.BLOCK_BEEHIVE_ENTER, SoundCategory.PLAYERS, 1, 1);
-        }
         return super.use(world, user, hand);
     }
 

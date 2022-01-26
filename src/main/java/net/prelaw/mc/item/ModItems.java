@@ -15,7 +15,7 @@ public class ModItems {
 
     // Misc
     public static final Item OLD_HERB_BUNDLE = registerItem("old_herb_bundle",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new OldBundleItems(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item OLD_MINERS_BUNDLE = registerItem("old_miners_bundle",
             new OldBundleItems(new FabricItemSettings().group(ItemGroup.MISC)));
 
