@@ -2,6 +2,7 @@ package net.prelaw.mc;
 
 import net.fabricmc.api.ModInitializer;
 import net.prelaw.mc.block.ModBlocks;
+import net.prelaw.mc.enchantment.ModEnchantments;
 import net.prelaw.mc.item.ModItems;
 import net.prelaw.mc.util.ModRegistries;
 import org.apache.logging.log4j.LogManager;
@@ -18,6 +19,6 @@ public class MinecraftOverhaul implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModRegistries.registerModStuffs();
-
+		ModEnchantments.registerModEnchantments();
 	}
 }

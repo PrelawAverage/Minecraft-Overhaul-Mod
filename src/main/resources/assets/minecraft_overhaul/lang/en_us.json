@@ -40,9 +40,11 @@
   "item.minecraft_overhaul.turtle_chestplate": "Turtle Chestplate",
   "item.minecraft_overhaul.turtle_leggings": "Turtle Leggings",
   "item.minecraft_overhaul.turtle_boots": "Turtle Boots",
+  "item.minecraft_overhaul.horse_armor_netherite": "Netherite Horse Armor",
   "item.minecraft_overhaul.ore_detector": "Ore Detector",
   "item.minecraft_overhaul.ore_detector.no_ore_found": "No Ores Were Found",
-  "item.minecraft_overhaul.old_miner_bundle": "Old Miner's Bundle",
-  "item.minecraft_overhaul.old_miner_bundle.tooltip.shift": "§8Right-click to Open",
-  "item.minecraft_overhaul.old_miner_bundle.tooltip": "Hold §eShift§r for more Information"
+  "item.minecraft_overhaul.old_miners_bundle": "Old Miner's Bundle",
+  "item.minecraft_overhaul.old_bundle_item.tooltip": "§8Right-click to Open",
+
+  "enchantment.minecraft_overhaul.lightning_striker": "Lightning Striker"
 }

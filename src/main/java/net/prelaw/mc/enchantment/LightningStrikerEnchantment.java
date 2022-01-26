@@ -1,0 +1,38 @@
+package net.prelaw.mc.enchantment;
+
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.entity.*;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.BlockPos;
+
+public class LightningStrikerEnchantment extends Enchantment {
+    public LightningStrikerEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
+        super(weight, type, slotTypes);
+    }
+
+    @Override
+    public void onTargetDamaged(LivingEntity user, Entity target, int level) {
+        // To be done on server and not client
+        if (!user.world.isClient()) {
+            ServerWorld world = ((ServerWorld) user.world);
+            PlayerEntity player = ((PlayerEntity) user);
+            BlockPos position = target.getBlockPos();
+
+            if (level == 1) {
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position, SpawnReason.TRIGGERED, true, true);
+            }
+            if (level == 2) {
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position, SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position, SpawnReason.TRIGGERED, true, true);
+            }
+        }
+    }
+
+    // How many levels will the game generate (books in creative tab)
+    @Override
+    public int getMaxLevel() {
+        return 2;
+    }
+}

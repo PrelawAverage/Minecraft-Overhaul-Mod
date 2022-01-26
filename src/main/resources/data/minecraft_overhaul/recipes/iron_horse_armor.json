@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  H",
+    "#S#",
+    "L#L"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "result": {
+    "item": "minecraft_overhaul:bookshelf_stairs",
+    "count": 4
+  }
+}

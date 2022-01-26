@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.prelaw.mc.MinecraftOverhaul;
 import net.prelaw.mc.item.custom.foodstuffs.OrangeJuiceItem;
+import net.prelaw.mc.item.custom.misc.OldBundleItems;
 import net.prelaw.mc.item.custom.tools.OreDetectorItem;
 import net.prelaw.mc.item.custom.foodstuffs.SweetBerryJuiceItem;
 
@@ -15,11 +16,10 @@ public class ModItems {
     // Misc
     public static final Item OLD_HERB_BUNDLE = registerItem("old_herb_bundle",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    public static final Item OLD_MINER_BUNDLE = registerItem("old_miner_bundle",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item OLD_MINERS_BUNDLE = registerItem("old_miners_bundle",
+            new OldBundleItems(new FabricItemSettings().group(ItemGroup.MISC)));
 
     // Materials
-
     public static final Item LEAF = registerItem("leaf",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item RAW_SILVER = registerItem("raw_silver",
@@ -75,6 +75,10 @@ public class ModItems {
             new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final Item TURTLE_BOOTS = registerItem("turtle_boots",
             new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new FabricItemSettings().group(ItemGroup.COMBAT)));
+
+    // Horse Armor
+    public static final Item HORSE_ARMOR_NETHERITE = registerItem("horse_armor_netherite",
+            new HorseArmorItem(15, "netherite", new FabricItemSettings().group(ItemGroup.MISC)));
 
     // Helper Method to help register the items
     private static Item registerItem(String name, Item item) {

@@ -1,6 +1,5 @@
 package net.prelaw.mc.item;
 
-
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -8,11 +7,12 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
-
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    MOLTEN("molten", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
+    MOLTEN("molten", 37, new int[]{3, 6, 8, 3}, 15,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f,
+            () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private static final int[] BASE_DURABILITY;
     private final String name;

@@ -71,5 +71,4 @@ public class SweetBerryJuiceItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         return ItemUsage.consumeHeldItem(world, user, hand);
     }
-
 }
