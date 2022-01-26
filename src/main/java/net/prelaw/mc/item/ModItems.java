@@ -42,6 +42,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ItemGroup.FOOD)));
     public static final Item COCONUT_SHELL = registerItem("coconut_shell",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
+    public static final Item PLATE = registerItem("plate",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
     // Foods
     public static final Item ORANGE = registerItem("orange",
