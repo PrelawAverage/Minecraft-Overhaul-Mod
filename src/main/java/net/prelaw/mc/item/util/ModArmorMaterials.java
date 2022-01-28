@@ -1,4 +1,4 @@
-package net.prelaw.mc.item;
+package net.prelaw.mc.item.util;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;

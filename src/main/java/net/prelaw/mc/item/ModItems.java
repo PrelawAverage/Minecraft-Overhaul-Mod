@@ -6,10 +6,16 @@ import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.prelaw.mc.MinecraftOverhaul;
+import net.prelaw.mc.block.ModBlocks;
+import net.prelaw.mc.item.custom.ModPickaxeItem;
 import net.prelaw.mc.item.custom.foodstuffs.OrangeJuiceItem;
 import net.prelaw.mc.item.custom.misc.OldBundleItems;
 import net.prelaw.mc.item.custom.tools.OreDetectorItem;
 import net.prelaw.mc.item.custom.foodstuffs.SweetBerryJuiceItem;
+import net.prelaw.mc.item.util.ModAxeItem;
+import net.prelaw.mc.item.util.ModFoodComponents;
+import net.prelaw.mc.item.util.ModHoeItem;
+import net.prelaw.mc.item.util.ModToolMaterial;
 
 public class ModItems {
 
@@ -18,6 +24,9 @@ public class ModItems {
             new OldBundleItems(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item OLD_MINERS_BUNDLE = registerItem("old_miners_bundle",
             new OldBundleItems(new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item COTTON_SEEDS = registerItem("cotton_seeds",
+            new AliasedBlockItem(ModBlocks.COTTON_CROP,
+                    new FabricItemSettings().group(ItemGroup.MISC)));
 
     // Materials
     public static final Item LEAF = registerItem("leaf",
@@ -46,6 +55,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item PLATE = registerItem("plate",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
+    public static final Item COTTON = registerItem("cotton",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
     // Foods
     public static final Item ORANGE = registerItem("orange",
@@ -68,9 +79,18 @@ public class ModItems {
     // Tools
     public static final Item ORE_DETECTOR = registerItem("ore_detector",
             new OreDetectorItem(new FabricItemSettings().group(ItemGroup.TOOLS).maxDamage(50)));
+    public static final Item CORAL_PICKAXE = registerItem("coral_pickaxe",
+            new ModPickaxeItem(ModToolMaterial.CORAL, 1, -2.8f, new FabricItemSettings().group(ItemGroup.TOOLS)));
+    public static final Item CORAL_SHOVEL = registerItem("coral_shovel",
+            new ShovelItem(ModToolMaterial.CORAL, 1.5f, -3.0f, new FabricItemSettings().group(ItemGroup.TOOLS)));
+    public static final Item CORAL_AXE = registerItem("coral_axe",
+            new ModAxeItem(ModToolMaterial.CORAL, 7.0f, -3.2f, new FabricItemSettings().group(ItemGroup.TOOLS)));
+    public static final Item CORAL_HOE = registerItem("coral_hoe", (
+            new ModHoeItem(ModToolMaterial.CORAL, -1, -2.0f, new FabricItemSettings().group(ItemGroup.TOOLS))));
 
     // Weapons
-
+    public static final Item CORAL_SWORD = registerItem("coral_sword",
+            new SwordItem(ModToolMaterial.CORAL, 3, -2.4f, new FabricItemSettings().group(ItemGroup.COMBAT)));
 
     // Armor
     public static final Item TURTLE_CHESTPLATE = registerItem("turtle_chestplate",

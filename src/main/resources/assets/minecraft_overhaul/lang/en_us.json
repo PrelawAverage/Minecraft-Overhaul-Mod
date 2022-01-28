@@ -38,6 +38,9 @@
   "block.minecraft_overhaul.glass_spruce_door": "Glass Spruce Door",
   "block.minecraft_overhaul.glass_dark_oak_door": "Glass Dark Oak Door",
   "block.minecraft_overhaul.glass_door": "Glass Door",
+  "block.minecraft_overhaul.cotton_crop": "Cotton Plant",
+  "block.minecraft_overhaul.shiver_leaf": "Shiverleaf",
+  "block.minecraft_overhaul.shiver_leaf_dead": "Dead Shiverleaf",
 
   "item.minecraft_overhaul.turtle_chestplate": "Turtle Chestplate",
   "item.minecraft_overhaul.turtle_leggings": "Turtle Leggings",
@@ -45,6 +48,7 @@
   "item.minecraft_overhaul.horse_armor_netherite": "Netherite Horse Armor",
   "item.minecraft_overhaul.ore_detector": "Ore Detector",
   "item.minecraft_overhaul.ore_detector.no_ore_found": "No Ores Were Found",
+
   "item.minecraft_overhaul.old_herb_bundle": "Old Herb Bundle",
   "item.minecraft_overhaul.old_miners_bundle": "Old Miner's Bundle",
   "item.minecraft_overhaul.old_bundle_item.tooltip": "§8Right-click to Open",
