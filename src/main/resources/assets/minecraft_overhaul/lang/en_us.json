@@ -48,6 +48,15 @@
   "item.minecraft_overhaul.old_herb_bundle": "Old Herb Bundle",
   "item.minecraft_overhaul.old_miners_bundle": "Old Miner's Bundle",
   "item.minecraft_overhaul.old_bundle_item.tooltip": "§8Right-click to Open",
+  "item.minecraft_overhaul.cotton_seeds": "Cotton Seeds",
+  "item.minecraft_overhaul.cotton": "Cotton",
+
+
+  "item.minecraft_overhaul.coral_pickaxe": "Coral Pickaxe",
+  "item.minecraft_overhaul.coral_axe": "Coral Axe",
+  "item.minecraft_overhaul.coral_shovel": "Coral Shovel",
+  "item.minecraft_overhaul.coral_hoe": "Coral Hoe",
+  "item.minecraft_overhaul.coral_sword": "Coral Sword",
 
   "enchantment.minecraft_overhaul.lightning_striker": "Lightning Striker"
 }
