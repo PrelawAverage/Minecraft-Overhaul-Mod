@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft_overhaul:item/short_bow",
+  "textures": {
+    "layer0": "minecraft_overhaul:item/short_bow_pulling_0"
+  }
+}

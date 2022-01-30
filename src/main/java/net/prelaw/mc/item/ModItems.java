@@ -91,6 +91,8 @@ public class ModItems {
     // Weapons
     public static final Item CORAL_SWORD = registerItem("coral_sword",
             new SwordItem(ModToolMaterial.CORAL, 3, -2.4f, new FabricItemSettings().group(ItemGroup.COMBAT)));
+    public static final Item SHORT_BOW = registerItem("short_bow",
+            new ShortBowItem(new FabricItemSettings().group(ItemGroup.COMBAT)));
 
     // Armor
     public static final Item TURTLE_CHESTPLATE = registerItem("turtle_chestplate",
