@@ -1,0 +1,52 @@
+{
+  "balloon_inflating": {
+    "subtitle": "minecraft_overhaul.balloon_inflating",
+    "sounds": [
+      "minecraft_overhaul:balloon_inflating_1",
+      "minecraft_overhaul:balloon_inflating_2"
+    ]
+  },
+  "balloon_popping": {
+    "subtitle": "minecraft_overhaul.balloon_popping",
+    "sounds": [
+      "minecraft_overhaul:balloon_popping_1",
+      "minecraft_overhaul:balloon_popping_2"
+    ]
+  },
+  "music_excuse": {
+    "subtitle": "minecraft_overhaul.music_excuse",
+    "sounds": [
+      "minecraft_overhaul:music_excuse"
+    ]
+  },
+  "music_chris": {
+    "subtitle": "minecraft_overhaul.music_chris",
+    "sounds": [
+      "minecraft_overhaul:music_chris"
+    ]
+  },
+  "sunrise_tune": {
+    "subtitle": "minecraft_overhaul.sunrise_tune",
+    "sounds": [
+      "minecraft_overhaul:sunrise_tune"
+    ]
+  },
+  "music_flake": {
+    "subtitle": "minecraft_overhaul.music_flake",
+    "sounds": [
+      {
+        "name": "minecraft_overhaul:music_flake",
+        "stream": true
+      }
+    ]
+  },
+  "music_aviva": {
+    "subtitle": "minecraft_overhaul.music_aviva",
+    "sounds": [
+      {
+        "name": "minecraft_overhaul:music_aviva",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -52,9 +52,10 @@
   "item.minecraft_overhaul.old_herb_bundle": "Old Herb Bundle",
   "item.minecraft_overhaul.old_miners_bundle": "Old Miner's Bundle",
   "item.minecraft_overhaul.old_bundle_item.tooltip": "§8Right-click to Open",
-  "item.minecraft_overhaul.cotton_seeds": "Cotton Seeds",
-  "item.minecraft_overhaul.cotton": "Cotton",
-
+  "item.minecraft_overhaul.music_disc_aviva": "§bMusic Disc",
+  "item.minecraft_overhaul.music_disc_aviva.desc": "§8C418 - Aviva",
+  "item.minecraft_overhaul.music_disc_flake": "§bMusic Disc",
+  "item.minecraft_overhaul.music_disc_flake.desc": "§8C418 - Flake",
 
   "item.minecraft_overhaul.coral_pickaxe": "Coral Pickaxe",
   "item.minecraft_overhaul.coral_axe": "Coral Axe",

@@ -27,6 +27,12 @@ public class ModItems {
     public static final Item COTTON_SEEDS = registerItem("cotton_seeds",
             new AliasedBlockItem(ModBlocks.COTTON_CROP,
                     new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item MUSIC_DISC_AVIVA = registerItem("music_disc_aviva",
+            new ModMusicDiscItem(9, ModSounds.MUSIC_AVIVA,
+                    new FabricItemSettings().group(ItemGroup.MISC).maxCount(1)));
+    public static final Item MUSIC_DISC_FLAKE = registerItem("music_disc_flake",
+            new ModMusicDiscItem(9, ModSounds.MUSIC_FLAKE,
+                    new FabricItemSettings().group(ItemGroup.MISC).maxCount(1)));
 
     // Materials
     public static final Item LEAF = registerItem("leaf",
