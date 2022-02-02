@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft_overhaul:coral_pickaxe",
+    "minecraft_overhaul:coral_axe",
+    "minecraft_overhaul:coral_shovel",
+    "minecraft_overhaul:coral_hoe",
+    "minecraft_overhaul:coral_sword"
+  ]
+}

@@ -11,6 +11,9 @@
   "item.minecraft_overhaul.coconut_shell": "Coconut Shell",
   "item.minecraft_overhaul.pearl": "Pearl",
   "item.minecraft_overhaul.plate": "Plate",
+  "item.minecraft_overhaul.cotton_seeds": "Cotton Seeds",
+  "item.minecraft_overhaul.cotton": "Cotton",
+  "item.minecraft_overhaul.rose_gold_ingot": "Rose Gold Ingot",
 
   "item.minecraft_overhaul.orange": "Orange",
   "item.minecraft_overhaul.banana": "Banana",
@@ -41,6 +44,13 @@
   "block.minecraft_overhaul.cotton_crop": "Cotton Plant",
   "block.minecraft_overhaul.shiver_leaf": "Shiverleaf",
   "block.minecraft_overhaul.shiver_leaf_dead": "Dead Shiverleaf",
+  "block.minecraft_overhaul.potted_shiver_leaf": "Potted Shiverleaf",
+  "block.minecraft_overhaul.fire_blossom": "Shiverleaf",
+  "block.minecraft_overhaul.fire_blossom_dead": "Dead Shiverleaf",
+  "block.minecraft_overhaul.potted_fire_blossom": "Potted Fire Blossom",
+  "block.minecraft_overhaul.dye_vat": "Dye Vat",
+  "block.minecraft_overhaul.soul_forge": "Soul Forge",
+  "block.minecraft_overhaul.ship_jar": "Ship in a Jar",
 
   "item.minecraft_overhaul.turtle_chestplate": "Turtle Chestplate",
   "item.minecraft_overhaul.turtle_leggings": "Turtle Leggings",
@@ -64,5 +74,8 @@
   "item.minecraft_overhaul.coral_sword": "Coral Sword",
   "item.minecraft_overhaul.short_bow": "Short Bow",
 
-  "enchantment.minecraft_overhaul.lightning_striker": "Lightning Striker"
+  "enchantment.minecraft_overhaul.lightning_striker": "Lightning Striker",
+  "effect.minecraft_overhaul.well_fed": "Well Fed",
+  "effect.minecraft_overhaul.knowledge": "Knowledge",
+  "effect.minecraft_overhaul.freeze": "Freezing"
 }

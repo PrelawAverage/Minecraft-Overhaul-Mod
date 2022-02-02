@@ -12,10 +12,9 @@ import net.prelaw.mc.item.custom.foodstuffs.OrangeJuiceItem;
 import net.prelaw.mc.item.custom.misc.OldBundleItems;
 import net.prelaw.mc.item.custom.tools.OreDetectorItem;
 import net.prelaw.mc.item.custom.foodstuffs.SweetBerryJuiceItem;
-import net.prelaw.mc.item.util.ModAxeItem;
-import net.prelaw.mc.item.util.ModFoodComponents;
-import net.prelaw.mc.item.util.ModHoeItem;
-import net.prelaw.mc.item.util.ModToolMaterial;
+import net.prelaw.mc.item.custom.weapons.ShortBowItem;
+import net.prelaw.mc.item.util.*;
+import net.prelaw.mc.sound.ModSounds;
 
 public class ModItems {
 
@@ -62,6 +61,8 @@ public class ModItems {
     public static final Item PLATE = registerItem("plate",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item COTTON = registerItem("cotton",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
+    public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
     // Foods

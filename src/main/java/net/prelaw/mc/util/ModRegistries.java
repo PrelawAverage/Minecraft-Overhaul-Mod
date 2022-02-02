@@ -23,9 +23,10 @@ public class ModRegistries {
     }
 
     // Here we Register the blocks that can burn from catching fire.
+    // Check RegisterDefaultFlammables for Minecraft Values
     private static void registerFlammables() {
         System.out.println("Registering Flammable Blocks for " + MinecraftOverhaul.MOD_ID);
-        // Encouragement = Speed
+        // Encouragement = Speed = Burn
         // Flammability = Spread
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BOOKSHELF_STAIRS, 30, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BOOKSHELF_SLAB, 30, 20);
@@ -52,7 +53,8 @@ public class ModRegistries {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.FLOUR, 0.85f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.HONEY_GLAZED_APPLE, 0.85f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.PINEAPPLE, 0.85f);
-        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.SHIVER_LEAF, 0.85f);
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.SHIVER_LEAF, 1.0f);
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.FIRE_BLOSSOM, 1.0f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.OLD_HERB_BUNDLE, 1.0f);
     }
 }

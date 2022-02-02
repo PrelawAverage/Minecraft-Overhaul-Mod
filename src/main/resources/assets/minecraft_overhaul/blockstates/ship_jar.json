@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "minecraft_overhaul:block/ship_jar" },
+    "facing=east": { "model": "minecraft_overhaul:block/ship_jar", "y": 90 },
+    "facing=south": { "model": "minecraft_overhaul:block/ship_jar", "y": 180 },
+    "facing=west": { "model": "minecraft_overhaul:block/ship_jar", "y": 270 }
+  }
+}

@@ -10,16 +10,16 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
 import net.prelaw.mc.MinecraftOverhaul;
+import net.prelaw.mc.block.custom.decoration.DyeVatBlock;
 import net.prelaw.mc.block.custom.crops.ModCottonBlock;
+import net.prelaw.mc.block.custom.decoration.ShipJar;
+import net.prelaw.mc.block.custom.decoration.SoulForgeBlock;
+import net.prelaw.mc.block.custom.flowers.FireBlossomFireBlock;
+import net.prelaw.mc.block.custom.flowers.PottedFireBlossomFlowerBlock;
 import net.prelaw.mc.block.custom.flowers.PottedShiverLeafFlowerBlock;
 import net.prelaw.mc.block.custom.flowers.ShiverLeafFlowerBlock;
-import net.prelaw.mc.block.custom.util.ModDoorBlock;
-import net.prelaw.mc.block.custom.util.ModPressurePlateBlock;
-import net.prelaw.mc.block.custom.util.ModStairBlock;
-import net.prelaw.mc.block.custom.util.ModStoneButtonBlock;
-import org.lwjgl.system.CallbackI;
+import net.prelaw.mc.block.custom.util.*;
 
 
 public class ModBlocks {
@@ -55,6 +55,21 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.GLOWING, 8, FabricBlockSettings.copy(Blocks.PINK_TULIP)));
     public static final Block POTTED_SHIVER_LEAF = registerBlockWithoutBlockItem("potted_shiver_leaf",
             new PottedShiverLeafFlowerBlock(ModBlocks.SHIVER_LEAF, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).luminance((state) -> 4)));
+    public static final Block FIRE_BLOSSOM = registerBlock("fire_blossom",
+            new FireBlossomFireBlock(StatusEffects.FIRE_RESISTANCE, 8, FabricBlockSettings.copy(Blocks.PINK_TULIP).ticksRandomly().luminance((state) -> 8)), ItemGroup.DECORATIONS);
+    public static final Block FIRE_BLOSSOM_DEAD = registerBlockWithoutBlockItem("fire_blossom_dead",
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 8, FabricBlockSettings.copy(Blocks.PINK_TULIP)));
+    public static final Block POTTED_FIRE_BLOSSOM = registerBlockWithoutBlockItem("potted_fire_blossom",
+            new PottedFireBlossomFlowerBlock(ModBlocks.FIRE_BLOSSOM, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).luminance((state) -> 8)));
+    public static final Block SHIP_JAR = registerBlock("ship_jar",
+            new ShipJar(FabricBlockSettings.of(Material.GLASS).strength(0.5f, 0.5f).sounds(BlockSoundGroup.GLASS).nonOpaque()), ItemGroup.DECORATIONS);
+
+    // Block Entities
+    public static final Block DYE_VAT = registerBlock("dye_vat",
+            new DyeVatBlock(FabricBlockSettings.of(Material.WOOD).strength(3, 3).sounds(BlockSoundGroup.WOOD).nonOpaque()), ItemGroup.DECORATIONS);
+    public static final Block SOUL_FORGE = registerBlock("soul_forge",
+            new SoulForgeBlock(FabricBlockSettings.of(Material.STONE).strength(3, 3).sounds(BlockSoundGroup.NETHERITE).luminance((state) -> state.get(SoulForgeBlock.LIT) ? 15 : 1)), ItemGroup.DECORATIONS);
+
 
     // Redstone
     public static final Block COPPER_BUTTON = registerBlock("copper_button",
@@ -69,6 +84,8 @@ public class ModBlocks {
             new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3.0f, 3.0f).nonOpaque().sounds(BlockSoundGroup.WOOD)), ItemGroup.REDSTONE);
     public static final Block GLASS_DOOR = registerBlock("glass_door",
             new ModDoorBlock(FabricBlockSettings.of(Material.GLASS).strength(0.3f).nonOpaque().sounds(BlockSoundGroup.GLASS)), ItemGroup.REDSTONE);
+
+    // Misc
 
     // Registering Stuff
     private static Block registerBlockWithoutBlockItem(String name, Block block) {

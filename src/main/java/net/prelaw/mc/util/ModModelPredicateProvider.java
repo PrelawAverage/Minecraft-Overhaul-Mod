@@ -1,6 +1,7 @@
 package net.prelaw.mc.util;
 
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.prelaw.mc.MinecraftOverhaul;
 import net.prelaw.mc.block.ModBlocks;
@@ -66,9 +67,8 @@ public class ModModelPredicateProvider {
                     if (entity.getActiveItem() != stack) {
                         return 0.0f;
                     }
-                    return (float)(stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0f;
+                    return (float)(stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 10.0f;
                 });
-
         FabricModelPredicateProviderRegistry.register(bow, new Identifier("pulling"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0f : 0.0f);
     }
 

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft_overhaul:soul_forge",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "output": {
+    "item": "minecraft_overhaul:rose_gold_ingot"
+  }
+}

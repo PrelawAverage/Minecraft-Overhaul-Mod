@@ -1,0 +1,14 @@
+{
+  "type": "minecraft_overhaul:soul_forge",
+  "ingredients": [
+    {
+      "item": "minecraft_overhaul:compressed_coal_block"
+    },
+    {
+      "item": "minecraft_overhaul:compressed_coal_block"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond"
+  }
+}
