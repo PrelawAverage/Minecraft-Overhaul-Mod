@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "minecraft_overhaul:block/pink_sakura_planks"
+  }
+}

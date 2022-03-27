@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.prelaw.mc.MinecraftOverhaul;
 import net.prelaw.mc.block.ModBlocks;
+import net.prelaw.mc.entity.ModEntities;
 import net.prelaw.mc.item.custom.ModPickaxeItem;
 import net.prelaw.mc.item.custom.foodstuffs.OrangeJuiceItem;
 import net.prelaw.mc.item.custom.misc.OldBundleItems;
@@ -32,6 +33,11 @@ public class ModItems {
     public static final Item MUSIC_DISC_FLAKE = registerItem("music_disc_flake",
             new ModMusicDiscItem(9, ModSounds.MUSIC_FLAKE,
                     new FabricItemSettings().group(ItemGroup.MISC).maxCount(1)));
+    public static final Item PINK_SAKURA_SIGN = registerItem("pink_sakura_sign",
+            new SignItem(new FabricItemSettings().group(ItemGroup.MISC).maxCount(1),
+                    ModBlocks.PINK_SAKURA_SIGN_BLOCK, ModBlocks.PINK_SAKURA_WALL_SIGN_BLOCK));
+    public static final Item JUMBO_SPAWN_EGG = registerItem("jumbo_spawn_egg",
+            new SpawnEggItem(ModEntities.JUMBO, 0x948e8d, 0x948e8d, new FabricItemSettings().group(ItemGroup.MISC)));
 
     // Materials
     public static final Item LEAF = registerItem("leaf",

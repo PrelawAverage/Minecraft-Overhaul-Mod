@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft_overhaul:item/pink_sakura_sign"
+  }
+}

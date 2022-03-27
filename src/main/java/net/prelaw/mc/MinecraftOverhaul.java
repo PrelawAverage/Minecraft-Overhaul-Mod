@@ -5,19 +5,21 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.prelaw.mc.block.ModBlocks;
 import net.prelaw.mc.block.entity.ModBlockEntities;
 import net.prelaw.mc.enchantment.ModEnchantments;
 import net.prelaw.mc.item.ModItems;
 import net.prelaw.mc.painting.ModPaintings;
+import net.prelaw.mc.potion.ModPotions;
 import net.prelaw.mc.recipe.ModRecipes;
 import net.prelaw.mc.status_effects.FreezeStatusEffect;
 import net.prelaw.mc.status_effects.KnowledgeStatusEffect;
+import net.prelaw.mc.status_effects.ModEffects;
 import net.prelaw.mc.status_effects.WellFed;
 import net.prelaw.mc.util.ModLootTableModifiers;
 import net.prelaw.mc.util.ModRegistries;
+import net.prelaw.mc.world.feature.ModConfiguredFeatures;
+import net.prelaw.mc.world.gen.ModWorldGen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -36,6 +38,7 @@ public class MinecraftOverhaul implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerAllEntities();
@@ -44,9 +47,10 @@ public class MinecraftOverhaul implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 		ModLootTableModifiers.modifyLootTables();
 		ModPaintings.registerPaintings();
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 
-		Registry.register(Registry.STATUS_EFFECT, new Identifier(MinecraftOverhaul.MOD_ID, "knowledge"), KNOWLEDGE);
-		Registry.register(Registry.STATUS_EFFECT, new Identifier(MinecraftOverhaul.MOD_ID, "freeze"), FREEZE);
-		Registry.register(Registry.STATUS_EFFECT, new Identifier(MinecraftOverhaul.MOD_ID, "well_fed"), WED_FED);
+		// Must be last
+		ModWorldGen.generateModWorldGen();
 	}
 }

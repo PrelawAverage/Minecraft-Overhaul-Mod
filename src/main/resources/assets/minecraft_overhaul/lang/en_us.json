@@ -14,6 +14,7 @@
   "item.minecraft_overhaul.cotton_seeds": "Cotton Seeds",
   "item.minecraft_overhaul.cotton": "Cotton",
   "item.minecraft_overhaul.rose_gold_ingot": "Rose Gold Ingot",
+  "item.minecraft_overhaul.jumbo_spawn_egg": "Jumbo Rabbit Spawn Egg",
 
   "item.minecraft_overhaul.orange": "Orange",
   "item.minecraft_overhaul.banana": "Banana",
@@ -25,6 +26,14 @@
   "item.minecraft_overhaul.orange_juice": "Orange Juice",
   "item.minecraft_overhaul.sweet_berry_dish": "Sweet Berry Dish",
 
+  "block.minecraft_overhaul.pink_sakura_leaves": "Pink Sakura Leaves",
+  "block.minecraft_overhaul.pink_sakura_sapling": "Pink Sakura Sapling",
+  "block.minecraft_overhaul.pink_sakura_sign": "Pink Sakura Sign",
+  "block.minecraft_overhaul.pink_sakura_log": "Pink Sakura Log",
+  "block.minecraft_overhaul.pink_sakura_wood": "Pink Sakura Wood",
+  "block.minecraft_overhaul.stripped_pink_sakura_log": "Stripped Pink Sakura Log",
+  "block.minecraft_overhaul.stripped_pink_sakura_wood": "Stripped Pink Sakura Wood",
+  "block.minecraft_overhaul.pink_sakura_planks": "Pink Sakura Planks",
   "block.minecraft_overhaul.compressed_coal_block": "Compressed Block of Coal",
   "block.minecraft_overhaul.raw_silver_block": "Block of Raw Silver",
   "block.minecraft_overhaul.silver_block": "Block of Silver",
@@ -33,6 +42,10 @@
   "block.minecraft_overhaul.smooth_sandstone_brick": "Smooth Sandstone Brick",
   "block.minecraft_overhaul.packed_ice_stairs": "Packed Ice Stairs",
   "block.minecraft_overhaul.packed_ice_slab": "Packed Ice Slab",
+  "block.minecraft_overhaul.ice_stairs": "Ice Stairs",
+  "block.minecraft_overhaul.ice_slab": "Ice Slab",
+  "block.minecraft_overhaul.glass_stairs": "Glass Stairs",
+  "block.minecraft_overhaul.glass_slab": "Glass Slab",
   "block.minecraft_overhaul.bookshelf_stairs": "Bookshelf Stairs",
   "block.minecraft_overhaul.bookshelf_slab": "Bookshelf Slab",
   "block.minecraft_overhaul.copper_button": "Copper Button",
@@ -51,6 +64,9 @@
   "block.minecraft_overhaul.dye_vat": "Dye Vat",
   "block.minecraft_overhaul.soul_forge": "Soul Forge",
   "block.minecraft_overhaul.ship_jar": "Ship in a Jar",
+  "block.minecraft_overhaul.cannon": "Cannon",
+  "block.minecraft_overhaul.fancy_glass": "Fancy Glass",
+  "block.minecraft_overhaul.item_stand": "Item Stand",
 
   "item.minecraft_overhaul.turtle_chestplate": "Turtle Chestplate",
   "item.minecraft_overhaul.turtle_leggings": "Turtle Leggings",
@@ -74,7 +90,12 @@
   "item.minecraft_overhaul.coral_sword": "Coral Sword",
   "item.minecraft_overhaul.short_bow": "Short Bow",
 
+  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
+  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze",
+
   "enchantment.minecraft_overhaul.lightning_striker": "Lightning Striker",
+
   "effect.minecraft_overhaul.well_fed": "Well Fed",
   "effect.minecraft_overhaul.knowledge": "Knowledge",
   "effect.minecraft_overhaul.freeze": "Freezing"

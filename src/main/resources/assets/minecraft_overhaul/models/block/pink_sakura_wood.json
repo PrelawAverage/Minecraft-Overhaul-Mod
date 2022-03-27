@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft_overhaul:block/pink_sakura_log",
+    "side": "minecraft_overhaul:block/pink_sakura_log"
+  }
+}

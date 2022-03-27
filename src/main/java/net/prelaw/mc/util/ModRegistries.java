@@ -1,10 +1,14 @@
 package net.prelaw.mc.util;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.ComposterBlock;
 import net.prelaw.mc.MinecraftOverhaul;
 import net.prelaw.mc.block.ModBlocks;
+import net.prelaw.mc.entity.ModEntities;
+import net.prelaw.mc.entity.custom.JumboRabbitEntity;
 import net.prelaw.mc.item.ModItems;
 
 public class ModRegistries {
@@ -12,6 +16,8 @@ public class ModRegistries {
         registerFuels();
         registerFlammables();
         registerModComposterChances();
+        registerStrippables();
+        registerAttributes();
     }
 
     // This registers fuels into the game. Fuels are items/blocks used in furnaces.
@@ -30,7 +36,14 @@ public class ModRegistries {
         // Flammability = Spread
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BOOKSHELF_STAIRS, 30, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BOOKSHELF_SLAB, 30, 20);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PINK_SAKURA_LOG, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PINK_SAKURA_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PINK_SAKURA_WOOD, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_PINK_SAKURA_LOG, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_PINK_SAKURA_WOOD, 5, 20);
     }
+
 
     // Here we register Commands
 
@@ -38,6 +51,15 @@ public class ModRegistries {
     // Here we register Events
 
 
+    // Registering Strippable Wood
+    public static void registerStrippables() {
+        StrippableBlockRegistry.register(ModBlocks.PINK_SAKURA_LOG, ModBlocks.STRIPPED_PINK_SAKURA_LOG);
+        StrippableBlockRegistry.register(ModBlocks.PINK_SAKURA_WOOD, ModBlocks.STRIPPED_PINK_SAKURA_WOOD);
+    }
+
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.JUMBO, JumboRabbitEntity.setAttributes());
+    }
     // Here we register ModItems for the Composter Block to use.
     // The float at the end determines the chance of the item increasing the composter.
     // All Vanilla values can be seen by Middle-Mouse-Clicking the ITEM_TO_LEVEL_INCREASE_CHANCE Method

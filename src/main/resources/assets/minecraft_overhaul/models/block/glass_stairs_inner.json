@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "minecraft_overhaul:block/stacked_glass",
+    "top": "minecraft_overhaul:block/cubed_glass",
+    "side": "minecraft_overhaul:block/stacked_glass"
+  }
+}

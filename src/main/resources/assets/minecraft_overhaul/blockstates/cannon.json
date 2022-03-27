@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "minecraft_overhaul:block/cannon" },
+    "facing=east": { "model": "minecraft_overhaul:block/cannon", "y": 90 },
+    "facing=south": { "model": "minecraft_overhaul:block/cannon", "y": 180 },
+    "facing=west": { "model": "minecraft_overhaul:block/cannon", "y": 270 }
+  }
+}

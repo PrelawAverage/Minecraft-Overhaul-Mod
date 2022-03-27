@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "minecraft_overhaul:block/item_stand" },
+    "facing=east": { "model": "minecraft_overhaul:block/item_stand", "y": 90 },
+    "facing=south": { "model": "minecraft_overhaul:block/item_stand", "y": 180 },
+    "facing=west": { "model": "minecraft_overhaul:block/item_stand", "y": 270 }
+  }
+}

@@ -4,9 +4,13 @@
   "package": "net.prelaw.mc.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "SignTypeAccessor",
+    "BlockEntityTypeMixin",
+    "BrewingRecipeRegistryMixin"
   ],
   "client": [
-    "ExampleMixin"
+    "ExampleMixin",
+    "ScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
