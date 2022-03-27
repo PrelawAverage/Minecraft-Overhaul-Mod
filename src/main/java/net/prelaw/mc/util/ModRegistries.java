@@ -57,9 +57,6 @@ public class ModRegistries {
         StrippableBlockRegistry.register(ModBlocks.PINK_SAKURA_WOOD, ModBlocks.STRIPPED_PINK_SAKURA_WOOD);
     }
 
-    private static void registerAttributes() {
-        FabricDefaultAttributeRegistry.register(ModEntities.JUMBO, JumboRabbitEntity.setAttributes());
-    }
     // Here we register ModItems for the Composter Block to use.
     // The float at the end determines the chance of the item increasing the composter.
     // All Vanilla values can be seen by Middle-Mouse-Clicking the ITEM_TO_LEVEL_INCREASE_CHANCE Method
@@ -78,5 +75,11 @@ public class ModRegistries {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.SHIVER_LEAF, 1.0f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.FIRE_BLOSSOM, 1.0f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.OLD_HERB_BUNDLE, 1.0f);
+    }
+
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.JUMBO, JumboRabbitEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.RED_SHROOM, JumboRabbitEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.JOLLY_LLAMA, JumboRabbitEntity.setAttributes());
     }
 }

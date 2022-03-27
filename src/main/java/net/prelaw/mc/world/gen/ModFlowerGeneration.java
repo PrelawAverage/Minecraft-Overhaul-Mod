@@ -9,9 +9,9 @@ import net.prelaw.mc.world.feature.ModPlacedFeatures;
 public class ModFlowerGeneration {
     public static void generateFlowers() {
         BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.ICY),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SHIVER_LEAF_PLACED_KEY);
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SHIVER_LEAF_PLACED.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.NETHER),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.FIRE_BLOSSOM_PLACED_KEY);
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.FIRE_BLOSSOM_PLACED.getKey().get());
     }
 }

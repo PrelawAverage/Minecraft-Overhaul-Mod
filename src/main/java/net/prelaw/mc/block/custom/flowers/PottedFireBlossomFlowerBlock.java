@@ -40,6 +40,7 @@ public class PottedFireBlossomFlowerBlock extends FlowerPotBlock {
     }
 
     // This Method will test if the Block is in a Biome that is cold to die.
+    /*
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (world.getBiome(pos).isCold(pos)) {
@@ -49,8 +50,7 @@ public class PottedFireBlossomFlowerBlock extends FlowerPotBlock {
     protected void die(BlockState state, World world, BlockPos pos) {
         world.removeBlock(pos, false);
         world.setBlockState(pos, ModBlocks.FIRE_BLOSSOM_DEAD.getDefaultState());
-    }
-
+    }*/
     // This Method will make the Fire Blossom burn Entities.
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {

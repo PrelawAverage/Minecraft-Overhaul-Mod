@@ -13,7 +13,7 @@ public class JumboRabbitModel extends AnimatedGeoModel<JumboRabbitEntity> {
 
     @Override
     public Identifier getTextureLocation(JumboRabbitEntity entity) {
-        return new Identifier(MinecraftOverhaul.MOD_ID, "textures/entity/jumbo/jumbo_rabbit.png");
+        return JumboRabbitRenderer.LOCATION_BY_VARIANT.get(entity.getVariant());
     }
 
     @Override

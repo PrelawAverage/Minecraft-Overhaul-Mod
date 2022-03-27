@@ -8,7 +8,9 @@ import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.prelaw.mc.block.ModBlocks;
 import net.prelaw.mc.entity.ModEntities;
+import net.prelaw.mc.entity.client.JollyLlamaRenderer;
 import net.prelaw.mc.entity.client.JumboRabbitRenderer;
+import net.prelaw.mc.entity.client.RedShroomiteRenderer;
 import net.prelaw.mc.event.ReplaceTitleScreenEvent;
 import net.prelaw.mc.screen.ModScreenHandlers;
 import net.prelaw.mc.screen.SoulForgeScreen;
@@ -50,6 +52,7 @@ public class MinecraftOverhaulClient implements ClientModInitializer {
         ScreenEvents.BEFORE_INIT.register(new ReplaceTitleScreenEvent());
 
         EntityRendererRegistry.register(ModEntities.JUMBO, JumboRabbitRenderer::new);
-
+        EntityRendererRegistry.register(ModEntities.RED_SHROOM, RedShroomiteRenderer::new);
+        EntityRendererRegistry.register(ModEntities.JOLLY_LLAMA, JollyLlamaRenderer::new);
     }
 }

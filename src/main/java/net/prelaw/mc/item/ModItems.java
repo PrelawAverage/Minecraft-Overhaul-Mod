@@ -38,6 +38,10 @@ public class ModItems {
                     ModBlocks.PINK_SAKURA_SIGN_BLOCK, ModBlocks.PINK_SAKURA_WALL_SIGN_BLOCK));
     public static final Item JUMBO_SPAWN_EGG = registerItem("jumbo_spawn_egg",
             new SpawnEggItem(ModEntities.JUMBO, 0x948e8d, 0x948e8d, new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item RED_SHROOMITE_SPAWN_EGG = registerItem("red_shroomite_spawn_egg",
+            new SpawnEggItem(ModEntities.RED_SHROOM, 0x948e8d, 0x948e8d, new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item JOLLY_LLAMA_SPAWN_EGG = registerItem("jolly_llama_spawn_egg",
+            new SpawnEggItem(ModEntities.JOLLY_LLAMA, 0x948e8d, 0x948e8d, new FabricItemSettings().group(ItemGroup.MISC)));
 
     // Materials
     public static final Item LEAF = registerItem("leaf",

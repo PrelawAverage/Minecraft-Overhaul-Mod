@@ -1,6 +1,5 @@
 package net.prelaw.mc.potion;
 
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;

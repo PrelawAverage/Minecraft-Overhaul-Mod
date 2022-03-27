@@ -55,7 +55,7 @@ public class FireBlossomFireBlock extends FlowerBlock {
     // This Method will test if the Block is in a Biome that is cold to die.
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        if (world.getLightLevel(LightType.BLOCK, pos) > 11 || world.getDimension().isUltrawarm() || world.getBiome(pos).isHot(pos)) {
+        if (world.getLightLevel(LightType.BLOCK, pos) > 11 || world.getDimension().isUltrawarm()) {
             this.die(state, world, pos);
         }
     }

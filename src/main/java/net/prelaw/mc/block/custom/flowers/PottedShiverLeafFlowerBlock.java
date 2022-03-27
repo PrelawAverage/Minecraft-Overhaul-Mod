@@ -38,7 +38,7 @@ public class PottedShiverLeafFlowerBlock extends FlowerPotBlock {
     }
 
     // This Method will test if the Block is in a Biome that is hot to die.
-    @Override
+    /*@Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (world.getLightLevel(LightType.BLOCK, pos) > 11 || world.getDimension().isUltrawarm() || world.getBiome(pos).isHot(pos)) {
             this.die(state, world, pos);
@@ -47,7 +47,7 @@ public class PottedShiverLeafFlowerBlock extends FlowerPotBlock {
     protected void die(BlockState state, World world, BlockPos pos) {
         world.removeBlock(pos, false);
         world.setBlockState(pos, ModBlocks.SHIVER_LEAF_DEAD.getDefaultState());
-    }
+    }*/
 
     // This Method will make the Shiverleaf freeze Entities.
     @Override
